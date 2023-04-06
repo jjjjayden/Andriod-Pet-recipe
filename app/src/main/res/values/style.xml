@@ -1,0 +1,27 @@
+<resources>
+    <!-- Other styles -->
+    <style name="CustomOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/orange</item>
+        <item name="backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomsingupButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/orange</item>
+        <item name="backgroundTint">@color/light_blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomsingupButton2" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/grey</item>
+        <item name="backgroundTint">@color/grey</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="whiteBackground" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

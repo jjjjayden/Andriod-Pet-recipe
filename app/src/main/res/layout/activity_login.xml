@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backgrodund"
+    >
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="login"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="USER NAME"
+                app:startIconDrawable="@drawable/ic_baseline_supervised_user_circle_24"
+                app:startIconTint="@color/black"
+                android:padding="10px"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="PASSWORD"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/password"
+                android:padding="10px"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:background="@drawable/rounded_edittext_background"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                style="@style/CustomOutlinedButton"
+                android:id="@+id/outlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:background="@drawable/rounded_edittext_background"
+                />
+            <Button
+                android:id="@+id/singButton"
+                style="@style/CustomsingupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_edittext_background"
+                android:text="@string/sing_up"
+                android:layout_marginTop="20px"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
