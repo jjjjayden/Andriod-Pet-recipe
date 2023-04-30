@@ -24,9 +24,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(view);
 
         binding.singButton.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+            Intent intent = new gaiwenIntent(LoginActivity.this, SignupActivity.class);
             startActivity(intent);
-
         });
     }
 }

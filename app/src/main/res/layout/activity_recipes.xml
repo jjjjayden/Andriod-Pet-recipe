@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backgrodund"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Get Recipes"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Pet Name"
+                android:padding="10px"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPetname"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputFirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Body weight"
+                android:padding="10px"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:padding="10px"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Available ingredients"
+                android:padding="10px"
+                app:startIconTint="@color/black"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Pet type"
+                android:padding="10px"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPetType"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/getRecipes"
+                style="@style/CustomsingupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:background="@drawable/rounded_edittext_background"
+                android:text="Get the recipe" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="188dp"
+            android:indeterminateTint="@color/black"
+            android:progressTint="@color/black"
+            android:visibility="gone"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/returnButton"
+        style="@style/CustomsingupButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60px"
+        android:background="@drawable/rounded_edittext_background"
+        android:text="Back" >
+
+    </Button>
+
+
+
+
+</LinearLayout>
